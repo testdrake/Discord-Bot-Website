@@ -86,11 +86,11 @@ Vote Horizonr</a>
       <div className="flex flex-row w-full h-auto lg:h-56 my-14 lg:my-40 bg-gradient-to-br lg:px-30 from-neutral-900/90 flex items-center justify-start to-neutral-900/50 rounded-lg p-1 shadow-md">
               <>
                 <div className="lg:mx-4 lg:p-8 py-4 lg:py-16 flex items-center justify-center flex-col text-center w-full lg:w-auto lg:text-left lg:flex-none">
-                  <img src=""  width="256" className="lg:hidden rounded-xl mb-5 shadow-xl shadow-black" />
+                  <img src="https://cdn.discordapp.com/attachments/1228215001832226899/1230099121894068285/Untitled_design_4.png?ex=66321614&is=661fa114&hm=d321b9ad673a7b96a3faa0a070e40dc220b752fae9c3d48c432ac5a088f75ced&"  width="256" className="lg:hidden rounded-xl mb-5 shadow-xl shadow-black" />
                   <p className="text-3xl text-white font-semibold">Ready To Try Horizon?</p>
                   <p className="text-md text-white font-medium text-gray-500 line-clamp-5">Invite Horizon to your server now and take it to the next level!</p>
                 </div>
-                 <img src="" className="hidden lg:block rounded-xl perspective-right shadow-xl shadow-black" />
+                 <img src="https://cdn.discordapp.com/attachments/1228215001832226899/1230099121894068285/Untitled_design_4.png?ex=66321614&is=661fa114&hm=d321b9ad673a7b96a3faa0a070e40dc220b752fae9c3d48c432ac5a088f75ced&" className="hidden lg:block rounded-xl perspective-right shadow-xl shadow-black" />
               </>
       
         </div>
