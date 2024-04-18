@@ -56,7 +56,7 @@ Vote Horizon</a>
            
               <div>
                 <div className="text-white"> 
-                  <p className="text-xl font-semibold mt-5"><i className={`fa fa-solid fa-music-access text-2xl text-amber-500`} /> Optimization</p>
+                  <p className="text-xl font-semibold mt-5"><i className={`fa fa-cogs text-2xl text-amber-500`} /> Optimization</p>
                   <p className="text-gray-500 line-clamp-4">With fast and customizable settings specific to your server, MusicMaker gives you a musical pleasure to the fullest.</p>
                 </div>
               </div>
