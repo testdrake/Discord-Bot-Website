@@ -3,32 +3,43 @@ import Link from "next/link";
 
 export default function Commands() {
 const commands = [
-  "/autoplay",
-  "/back",
-  "/statistic",
-  "/channel",
-  "/clear",
-  "/dj",
-  "/filter",
+  "/afk",
+  "/announcement",
+  "/automod",
+  "/autosetup",
+  "/birthdays",
+  "/bot",
+  "/casino",
   "/help",
-  "/language",
-  "/loop",
-  "/nowplaying",
-  "/pause",
-  "/ping",
-  "/play",
-  "/playlist",
-  "/queue",
-  "/resume",
-  "/save",
+  "/config",
+  "/custom-commands",
+  "/economy",
+  "/embed",
+  "/family",
+  "/fun",
+  "/games",
+  "/giveaway",
+  "/guild",
+  "/images",
+  "/levels",
+  "/messages",
+  "/moderation",
+  "/music",
+  "/notepad",
+  "/profile",
+  "/radio",
+  "/reactionroles",
+  "/report",
   "/search",
-  "/seek",
-  "/servers",
-  "/shuffle",
-  "/skip",
-  "/stop",
-  "/time",
-  "/volume"
+  "/serverstats",
+  "/setup",
+  "/soundboard",
+  "/stickymessages",
+  "/suggestions",
+  "/thanks",
+  "/tickets",
+  "/tools",
+  "/voice"
 ];
 
   return (
@@ -89,21 +100,21 @@ const commands = [
 
         <div className="animateHeader mt-10 flex flex-wrap items-center justify-center gap-x-4">
   
-  <Link href={"https://discord.com/api/oauth2/authorize?client_id=774043716797071371&permissions=277028620608&scope=applications.commands%20bot"}>
+  <Link href={"https://discord.com/oauth2/authorize?client_id=1217203597603897535&permissions=8&scope=bot"}>
   <a className={"flex items-center px-6 justify-center gap-x-2 shadow-lg shadow-amber-600/20 rounded-xl py-4 font-medium bg-gradient-to-bl from-amber-700 to-amber-500 hover:opacity-80 transition duration-200 text-white " }>
 Invite Horizon</a>
   </Link>
 
   <div className="py-10"></div>
   
-  <Link href={"https://discord.gg/ZcDprCrFTn"}>
+  <Link href={"https://discord.gg/h8dY8SF7RX"}>
   <a className={" px-6 justify-center gap-x-2 shadow-lg shadow-amber-600/20 rounded-xl py-4 font-medium bg-gradient-to-bl from-amber-700 to-amber-500 hover:opacity-80 transition duration-200 text-white " }>
 Support Server</a>
   </Link>
 
   <div className="py-10"></div>
   
-  <Link href={"https://top.gg/bot/774043716797071371/vote"}>
+  <Link href={"https://discordlist.gg/bot/1217203597603897535/vote"}>
   <a className={" px-6 justify-center gap-x-2 shadow-lg shadow-amber-600/20 rounded-xl py-4 font-medium bg-gradient-to-bl from-amber-700 to-amber-500 hover:opacity-80 transition duration-200 text-white " }>
 Vote Horizon</a>
   </Link>
