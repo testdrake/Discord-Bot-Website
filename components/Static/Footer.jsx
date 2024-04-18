@@ -66,14 +66,14 @@ export default function Footer() {
                         <div className="col-span-1">
                             <p className="text-white font-medium mt-3 sm:mt-0 sm:mb-3">Important</p>
                             <div>
-                                <Link href="/tos">
+                                <Link href="https://sites.google.com/gailmanagement.org/horizon/terms-of-service?authuser=0">
                                     <a className="text-white/50 hover:text-white hover:underline transform duration-200">
                                         Terms Of Service
                                     </a>
                                 </Link>
                             </div>
                             <div>
-                                <Link href="/privacy">
+                                <Link href="https://sites.google.com/gailmanagement.org/horizon/privacy-policy?authuser=0">
                                     <a className="text-white/50 hover:text-white hover:underline transform duration-200">
                                         Privacy Policy
                                     </a>
