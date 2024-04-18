@@ -35,7 +35,7 @@ const commands = [
     <>
       <div>
       <div className="flex w-full justify-center">
-      <img width="500" src="/img/bck2.png" />
+      <img width="500" src="/img/bck2 (1).png" />
       </div>
         <p className="text-xl font-medium text-white">
           <i className="fal fa-cogs text-amber-400 mr-2" />
