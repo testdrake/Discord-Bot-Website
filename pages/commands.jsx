@@ -5,6 +5,7 @@ export default function Commands() {
 const commands = [
   "/afk",
   "/announcement",
+  "/anime",
   "/automod",
   "/autosetup",
   "/birthdays",
@@ -27,6 +28,7 @@ const commands = [
   "/music",
   "/notepad",
   "/profile",
+  "/pet",
   "/radio",
   "/reactionroles",
   "/report",
