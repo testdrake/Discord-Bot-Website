@@ -79,6 +79,13 @@ export default function Footer() {
                                     </a>
                                 </Link>
                             </div>
+                            <div>
+                                <Link href="https://sites.google.com/gailmanagement.org/horizon/credits">
+                                    <a className="text-white/50 hover:text-white hover:underline transform duration-200">
+                                        Credits
+                                    </a>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <div className="mt-10 grid content-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
