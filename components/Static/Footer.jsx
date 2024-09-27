@@ -93,9 +93,7 @@ export default function Footer() {
                             {new Date().getFullYear()} &copy; Horizon
                         </p>
                         <div className="hidden md:flex items-center justify-center">
-                                <p className={"text-xs text-green-400"}>
-                                    Bot Online
-                                </p>
+                                <iframe src="https://status.horizondevelopment.xyz/badge?theme=dark" width="250" height="30" frameborder="0" scrolling="no"></iframe>
                         </div>
                         <p className="text-white text-center sm:text-right text-opacity-50">
                             {"Powered by ĦØŘƗŽØŇ"}
