@@ -43,15 +43,7 @@ export default function Developers() {
                 .card-container {
                     opacity: 0;
                     transform: translateY(20px);
-                    transition: all 0.6s ease;
-                }
-
-                .card-container:nth-child(1) {
-                    transition-delay: 0.1s;
-                }
-
-                .card-container:nth-child(2) {
-                    transition-delay: 0.3s;
+                    transition: opacity 0.6s ease, transform 0.6s ease;
                 }
 
                 .card-container.show {
@@ -71,10 +63,12 @@ export default function Developers() {
 
             <script>
                 {`
-                    document.addEventListener('DOMContentLoaded', function() {
+                    window.addEventListener('load', function() {
                         const cards = document.querySelectorAll('.card-container');
-                        cards.forEach(card => {
-                            card.classList.add('show');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('show');
+                            }, index * 200); // Staggered delay between each card
                         });
                     });
                 `}
