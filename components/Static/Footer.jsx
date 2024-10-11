@@ -96,7 +96,7 @@ export default function Footer() {
                                 <iframe src="https://status.horizondevelopment.xyz/badge?theme=dark" width="250" height="30" frameborder="0" scrolling="no"></iframe>
                         </div>
                         <p className="text-white text-center sm:text-right text-opacity-50">
-                            {"Powered by ĦØŘƗŽØŇ"}
+                            {"Powered by Horizon Development"}
                         </p>
                     </div>
                 </div>
