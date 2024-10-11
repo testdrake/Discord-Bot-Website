@@ -43,7 +43,7 @@ export default function Developers() {
                 .card-container {
                     opacity: 0;
                     transform: translateY(20px);
-                    transition: opacity 0.6s ease, transform 0.6s ease;
+                    transition: opacity 0.5s ease, transform 0.5s ease;
                 }
 
                 .card-container.show {
@@ -65,10 +65,8 @@ export default function Developers() {
                 {`
                     window.addEventListener('load', function() {
                         const cards = document.querySelectorAll('.card-container');
-                        cards.forEach((card, index) => {
-                            setTimeout(() => {
-                                card.classList.add('show');
-                            }, index * 200); // Staggered delay between each card
+                        cards.forEach(card => {
+                            card.classList.add('show');
                         });
                     });
                 `}
