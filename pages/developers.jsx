@@ -1,6 +1,8 @@
+import Snowfall from "react-snowfall"; 
 export default function Developers() {
     return (
         <>
+            <Snowfall color="#ffffff" snowflakeCount={200} />
             <div className="w-full my-10">
                 <div className="flex w-full justify-center">
                     <img width="400" src="/img/bck7.png" alt="Background" />
