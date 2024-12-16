@@ -1,6 +1,6 @@
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
-
+import Snowfall from "react-snowfall";
 export default function Commands() {
 const commands = [
   "/afk",
@@ -46,6 +46,7 @@ const commands = [
 
   return (
     <>
+      <Snowfall color="#ffffff" snowflakeCount={200} />
       <div>
       <div className="flex w-full justify-center">
       <img width="500" src="/img/bck2 (1).png" />
