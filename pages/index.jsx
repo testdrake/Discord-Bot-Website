@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import Snowfall from "react-snowfall"; 
 export default function Index() {
 	
   return (
     <>
+	<Snowfall color="#ffffff" snowflakeCount={200} />
+
       <div className="py-20 mb-30 max-w-3xl mx-auto">
         <div className="flex w-full justify-center">
       <img width="500" src="/img/bck (1).png" />
