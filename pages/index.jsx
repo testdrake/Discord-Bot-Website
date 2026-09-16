@@ -1,47 +1,39 @@
 import Link from "next/link";
-import { FiArrowUpRight, FiCheck, FiGrid, FiHeadphones, FiShield } from "react-icons/fi";
+import { FiArrowRight, FiCheck, FiGlobe, FiHeadphones, FiShield, FiStar } from "react-icons/fi";
 
 const inviteUrl = "https://discord.com/oauth2/authorize?client_id=1217203597603897535&permissions=8&scope=bot";
-const supportUrl = "https://discord.gg/h8dY8SF7RX";
 const voteUrl = "https://discordlist.gg/bot/1217203597603897535/vote";
 
 const features = [
-  { icon: FiShield, number: "01", label: "CONTROL", title: "Moderation without the noise", description: "Automate the repetitive work and keep your community clear, calm, and welcoming." },
-  { icon: FiHeadphones, number: "02", label: "ENERGY", title: "Music that just works", description: "Bring people together with reliable playback, queues, filters, and effortless controls." },
-  { icon: FiGrid, number: "03", label: "MOMENTUM", title: "More reasons to return", description: "Give your members games, roles, events, and small moments worth coming back for." },
+  { icon: FiShield, title: "Powerful moderation", text: "Keep your community safe with smart automations, filters, and helpful tools." },
+  { icon: FiHeadphones, title: "Music for every moment", text: "Reliable queues and simple controls that keep your server moving." },
+  { icon: FiStar, title: "Personality included", text: "Games, roles, and little surprises that make your server feel alive." },
 ];
 
 export default function Index() {
   return (
-    <div className="site-shell">
-      <div className="noise" />
-      <div className="cursor-glow" />
-      <section className="hero-section">
-        <div className="eyebrow"><span className="live-dot" /> HORIZON / DISCORD COMPANION</div>
-        <h1 className="hero-title">A better<br /><span>server</span><br />starts here.</h1>
-        <p className="hero-copy">Horizon is the all-in-one Discord bot for communities that want sharper tools, more energy, and less busywork.</p>
-        <div className="hero-actions"><a className="primary-link" href={inviteUrl}>Invite Horizon <FiArrowUpRight /></a><Link href="/commands"><a className="text-link">Browse commands <FiArrowUpRight /></a></Link></div>
-        <div className="hero-aside"><span className="aside-line" /><span>Built for communities<br />that care about the details.</span></div>
+    <div className="forge-page">
+      <div className="hero-orb orb-one" /><div className="hero-orb orb-two" />
+      <section className="forge-hero">
+        <div className="forge-hero-copy">
+          <div className="hero-badge"><span className="badge-dot" /> THE DISCORD BOT WITH ATTITUDE</div>
+          <h1>Horizon</h1>
+          <h2>Discord made <span>better.</span></h2>
+          <p>Transform your Discord server with Horizon — the all-in-one bot that brings powerful moderation, music, and personality to every community.</p>
+          <div className="hero-actions"><a className="discord-button" href={inviteUrl}><FiShield /> Add to Discord</a><a className="outline-button" href="#features">Explore features <FiArrowRight /></a></div>
+          <small className="terms">By adding Horizon, you agree to our Terms of Service and Privacy Policy</small>
+        </div>
+        <div className="hero-visual" aria-label="Horizon bot shield illustration"><div className="shield-ring"><div className="shield-mark"><FiShield /></div><span className="spark spark-one" /><span className="spark spark-two" /></div><div className="ghost-shield"><FiShield /></div></div>
       </section>
 
-      <section className="manifesto-section">
-        <div className="section-label">/ 01 — THE IDEA</div>
-        <div className="manifesto-grid"><h2>Not another bot.<br /><em>A better atmosphere.</em></h2><p>Good communities are made of tiny moments. The right moderation tool. The perfect song. A reason to say one more thing before logging off. Horizon brings those moments together.</p></div>
-      </section>
+      <section className="trust-strip"><span>TRUSTED BY COMMUNITIES THAT WANT MORE</span><strong>40,000+</strong><span>members protected and entertained</span></section>
 
-      <section className="feature-section">
-        <div className="section-label">/ 02 — THE TOOLKIT</div>
-        <div className="feature-list">{features.map(({ icon: Icon, number, label, title, description }) => <article key={title} className="feature-row"><div className="feature-index">{number}</div><div className="feature-icon"><Icon /></div><div className="feature-heading"><span>{label}</span><h3>{title}</h3></div><p>{description}</p><FiArrowUpRight className="feature-arrow" /></article>)}</div>
-      </section>
+      <section className="feature-section" id="features"><div className="section-kicker">WHY HORIZON <span>01</span></div><h2>One bot.<br /><em>More atmosphere.</em></h2><div className="feature-grid">{features.map(({ icon: Icon, title, text }) => <article className="feature-card" key={title}><div className="feature-icon"><Icon /></div><h3>{title}</h3><p>{text}</p><a href={inviteUrl}>Learn more <FiArrowRight /></a></article>)}</div></section>
 
-      <section className="terminal-section"><div className="terminal-top"><span>horizon@your-server ~</span><span className="terminal-status">● ONLINE</span></div><div className="terminal-body"><p><span className="prompt">$</span> invite --horizon</p><p className="terminal-muted">Your community is ready.</p><p className="terminal-success"><FiCheck /> 40+ commands loaded. Let&apos;s make some noise.</p></div><a href={inviteUrl} className="terminal-link">Run command <FiArrowUpRight /></a></section>
-
-      <section className="footer-cta"><div className="section-label">/ 03 — NEXT STEP</div><h2>Make your server<br /><span>feel like yours.</span></h2><div className="hero-actions"><a className="primary-link" href={inviteUrl}>Get Horizon <FiArrowUpRight /></a><a className="text-link" href={voteUrl}>Vote for us <FiArrowUpRight /></a></div></section>
+      <section className="command-banner"><div><span className="section-kicker">READY WHEN YOU ARE <span>02</span></span><h2>Give your server<br /><em>some character.</em></h2></div><a className="discord-button" href={inviteUrl}>Invite Horizon <FiArrowRight /></a></section>
+      <section className="mini-links"><Link href="/commands"><a>Browse commands <FiArrowRight /></a></Link><a href={voteUrl}>Vote for Horizon <FiArrowRight /></a><span><FiGlobe /> Online worldwide</span></section>
     </div>
   );
 }
 
-export { supportUrl };
-
 export const config = { amp: false };
-
